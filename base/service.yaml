@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rpaazurecr-service
+  namespace: main
+  labels:
+    app: rpaazurecr-app
+    service: rpaazurecr
+spec:
+  selector:
+    service: rpaazurecr
+  ports:
+  - name: http-port
+    port: 80
+    targetPort: 80
+    protocol: TCP
+  type: LoadBalancer

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rpaazure-deployment
+  namespace: main
+  labels:
+    app: rpaazurecr-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: rpaazurecr
+  template:
+    metadata:
+      labels:
+        app: rpaazurecr-app
+        service: rpaazurecr
+    spec: # Pod spec
+      containers:
+      - name: rpaazure-pod
+        image: "rpaazurecr.azurecr.io/rpaazure:v1"
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80

@@ -1,0 +1,10 @@
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+      name: ASPNETCORE_ENVIRONMENT
+      value: Production
+- op: add
+  path: /spec/template/spec/containers/0/env/-
+  value:
+      name: ASPNETCORE_URLS
+      value: http://+:80

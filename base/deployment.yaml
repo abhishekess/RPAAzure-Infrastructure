@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rpaazure-deployment
-  namespace: main
+  namespace: dev
   labels:
     app: rpaazurecr-app
 spec:

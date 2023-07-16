@@ -18,7 +18,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: rpaazure-pod
-        image: "rpaazurecr.azurecr.io/rpaazure:v1"
+        image: "rpaazuredevcr.azurecr.io/rpaazure:v1"
         imagePullPolicy: Always
         ports:
         - containerPort: 80

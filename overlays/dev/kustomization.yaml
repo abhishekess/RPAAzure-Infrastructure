@@ -8,3 +8,7 @@ patches:
 - path: ./patches-env.yaml
   target:
     kind: Deployment
+
+images:
+  - name: rpaazuredevcr.azurecr.io/rpaazure
+    newTag: v1

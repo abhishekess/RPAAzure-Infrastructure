@@ -9,4 +9,4 @@ patches:
       kind: Deployment
 images:
   - name: rpaazuredevcr.azurecr.io/rpaazure
-    newTag: $(tag)
+    newTag: 0336888e62f58d1ac5f78cd28f21f50a83f0001a

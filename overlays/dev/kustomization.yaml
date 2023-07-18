@@ -11,4 +11,4 @@ patches:
 
 images:
   - name: rpaazuredevcr.azurecr.io/rpaazure
-    newTag: v1
+    newTag: a5461a3f4dd6be2cb204925df0fb64499a547921

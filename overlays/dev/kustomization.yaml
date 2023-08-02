@@ -9,4 +9,4 @@ patches:
       kind: Deployment
 images:
   - name: rpaazuredevcr.azurecr.io/rpaazure
-    newTag: a5af404081dabcab4aff4b408703f17c0b33ed97
+    newTag: 5edc7d42f26d40ba7298a876b6931bd73772f5ea
